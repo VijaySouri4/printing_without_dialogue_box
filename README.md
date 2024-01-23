@@ -1,16 +1,22 @@
 # printing_without_dialogue_box
 
-A new Flutter project.
+A super simple flutter project
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project assumes that you have a printer available in CUPS and this project and your CUPS printer are on the same local network. 
 
-A few resources to get you started if this is your first Flutter project:
+This project uses the default ip and port number for CUPS but make sure these are changed according to your system. 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Install Flask
+```{bash}
+pip install flask
+```
+2. Start the printserver.py flask server
+```{bash}
+python printserver.py
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Run the Flutter project
+
+This Application was tested on Linux. 
