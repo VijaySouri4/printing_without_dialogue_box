@@ -1,39 +1,3 @@
-// import 'package:flutter/material.dart';
-// import 'package:printing/printing.dart';
-// import 'package:pdf/widgets.dart' as pw;
-
-// void main() {
-//   runApp(MyApp());
-// }
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         appBar: AppBar(title: Text('Printer App')),
-//         body: Center(
-//           child: ElevatedButton(
-//             onPressed: () async {
-//               final pdf = pw.Document();
-//               pdf.addPage(
-//                 pw.Page(
-//                   build: (pw.Context context) => pw.Center(
-//                     child: pw.Text(
-//                         'Hello World!'), // Replace with your receipt layout
-//                   ),
-//                 ),
-//               );
-//               await Printing.layoutPdf(onLayout: (format) => pdf.save());
-//             },
-//             child: Text('Print Receipt'),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:pdf/pdf.dart';
